@@ -9,4 +9,3 @@ let make = () => {
   | _ => <div> {React.string("Erreur 404")}</div>
   };
 };
-

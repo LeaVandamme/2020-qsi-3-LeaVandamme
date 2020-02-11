@@ -25,13 +25,13 @@ let newDog = (setState) => {
 
 [@react.component]
 let make = () => {
-let (state, setState) = React.useState(() => LoadingDogs);
+  let (state, setState) = React.useState(() => LoadingDogs);
 
   // Notice that instead of `useEffect`, we have `useEffect0`. See
   // reasonml.github.io/reason-react/docs/en/components#hooks for more info
   React.useEffect0(() => {
-    
     newDog(setState);
+
     // Returning None, instead of Some(() => ...), means we don't have any
     // cleanup to do before unmounting. That's not 100% true. We should
     // technically cancel the promise. Unofortunately, there's currently no

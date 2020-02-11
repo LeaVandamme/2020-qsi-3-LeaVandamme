@@ -1,5 +1,6 @@
 [@react.component]
 let make = () => {
+
   <div>
   
   <a href="/greeting">{React.string("Greeting")}</a>
@@ -7,7 +8,5 @@ let make = () => {
   <a href="/blinkingGreeting">{React.string("Blinking Greeting")}</a>
   <a href="/dogPicture">{React.string("Dog Picture")}</a>
 
-
-  
   </div>
 };
